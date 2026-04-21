@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+  <div class="container header__row">
+    <a class="logo" href="index.html">
+      <span class="logo__mark">+</span><span class="logo__text">MedCare</span>
+    </a>
+
+    <nav>
+      <a href="index.html">Главная</a>
+      <a href="services.html">Услуги и цены</a>
+      <a href="doctors.html">Врачи</a>
+      <a href="contacts.html">Контакты</a>
+      <a href="about.html">О нас</a>
+      <a href="reviews.html">Отзывы</a>
+      </nav>
+
+    <a class="btn btn--primary" href="appointment.html">Записаться</a>
+  </div>
+</header>
+
+<main>
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section__head">
+        <div>
+          <h2 class="section__title">Услуги и цены</h2>
+          <p class="section__subtitle">Выберите категорию или найдите услугу по названию.</p>
+        </div>
+
+        <div class="filters">
+          <div class="field">
+            <label class="label" for="serviceSearch">Поиск</label>
+            <input class="input" id="serviceSearch" type="text" placeholder="Например: УЗИ, анализ..." />
+            <div class="hint" id="searchHint">Введите минимум 2 символа</div>
+          </div>
+
+          <div class="field">
+            <label class="label" for="serviceCategory">Категория</label>
+            <select class="select" id="serviceCategory">
+              <option value="all">Все</option>
+            </select>
+            <div class="hint">Фильтр по направлению</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid" id="servicesGrid" aria-live="polite"></div>
+      <div class="empty hidden" id="servicesEmpty">
+        Ничего не найдено. Попробуйте изменить поиск или категорию.
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer__row">
+    <div class="muted">© 2026 MedCare. Учебный проект.</div>
+    <div class="muted">Политика конфиденциальности · Пользовательское соглашение</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script src="admin-check.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Админ-панель</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<h1>Панель администратора</h1>
+
+<div class="admin-stats">
+Всего записей: <span id="count"></span>
+</div>
+
+<input type="text" id="search" placeholder="Поиск по имени...">
+<div class="admin-row admin-header">
+    <span>Имя</span>
+    <span>Телефон</span>
+    <span>Email</span>
+    <span>Врач</span>
+    <span>Услуга</span>
+    <span>Дата</span>
+    <span>Время</span>
+    <span></span>
+    </div>
+
+<div id="appointmentsList" class="admin-table"></div>
+
+
+<script src="admin.js"></script>
+
+</body>
+</html>

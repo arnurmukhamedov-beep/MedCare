@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>О нас</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+  <div class="container header__row">
+    <a class="logo" href="index.html">
+      <span class="logo__mark">+</span><span class="logo__text">MedCare</span>
+    </a>
+
+    <nav>
+      <a href="index.html">Главная</a>
+      <a href="services.html">Услуги и цены</a>
+      <a href="doctors.html">Врачи</a>
+      <a href="contacts.html">Контакты</a>
+      <a href="about.html">О нас</a>
+      <a href="reviews.html">Отзывы</a>
+      </nav>
+
+    <a class="btn btn--primary" href="appointment.html">Записаться</a>
+  </div>
+</header>
+
+<main>
+  <section class="section" id="appointment">
+    <div class="container">
+      <div class="section__head">
+        <div>
+          <h2 class="section__title">Запись на приём</h2>
+          <p class="section__subtitle">Заполните форму — мы свяжемся для подтверждения.</p>
+        </div>
+      </div>
+
+      <div class="formWrap">
+        <form class="form" id="appointmentForm" novalidate>
+          <div class="form__grid">
+            <div class="field">
+              <label class="label" for="fullName">ФИО</label>
+              <input class="input" id="fullName" name="fullName" type="text" required minlength="3"
+                     placeholder="Например: Иванов Иван" />
+              <div class="error" id="fullNameError"></div>
+            </div>
+
+            <div class="field">
+              <label class="label" for="phone">Телефон</label>
+              <input class="input" id="phone" name="phone" type="tel" required
+                     placeholder="+7 (___) ___-__-__" />
+              <div class="error" id="phoneError"></div>
+            </div>
+
+            <div class="field">
+              <label class="label" for="email">Email</label>
+              <input class="input" id="email" name="email" type="email" required
+                     placeholder="name@example.com" />
+              <div class="error" id="emailError"></div>
+            </div>
+
+            <div class="field">
+              <label class="label" for="doctor">Врач</label>
+              <select class="select" id="doctor" name="doctor" required>
+                <option value="">Выберите врача</option>
+              </select>
+              <div class="error" id="doctorError"></div>
+            </div>
+
+            <div class="field">
+              <label class="label" for="service">Услуга</label>
+              <select class="select" id="service" name="service" required>
+                <option value="">Выберите услугу</option>
+              </select>
+              <div class="error" id="serviceError"></div>
+            </div>
+
+            <div class="field">
+              <label class="label" for="date">Дата</label>
+              <input class="input" id="date" name="date" type="date" required />
+              <div class="error" id="dateError"></div>
+            </div>
+
+            <div class="field">
+              <label class="label" for="time">Время</label>
+              <input class="input" id="time" name="time" type="time" required />
+              <div class="error" id="timeError"></div>
+            </div>
+
+            <div class="field field--wide">
+              <label class="label" for="comment">Комментарий (необязательно)</label>
+              <textarea class="textarea" id="comment" name="comment" rows="3"
+                        placeholder="Например: нужно УЗИ..."></textarea>
+              <div class="hint">Не указывайте пароли/банковские данные</div>
+            </div>
+
+            <label class="check field--wide">
+              <input class="check__box" id="agree" name="agree" type="checkbox" required />
+              <span class="check__text">Согласен(на) на обработку персональных данных</span>
+            </label>
+            <div class="error field--wide" id="agreeError"></div>
+          </div>
+
+          <div class="form__footer">
+            <button class="btn btn--primary" type="submit">Отправить заявку</button>
+            <button class="btn btn--ghost" type="reset" id="resetBtn">Очистить</button>
+            <div class="msg" id="formMsg" role="status" aria-live="polite"></div>
+          </div>
+        </form>
+
+        <aside class="side">
+          <h3 class="side__title">Последние заявки</h3>
+          <p class="muted">Сохраняется в браузере (LocalStorage).</p>
+          <div class="miniList" id="requestsList"></div>
+          <button class="btn btn--danger" id="clearRequestsBtn" type="button">Очистить историю</button>
+        </aside>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer__row">
+    <div class="muted">© 2026 MedCare. Учебный проект.</div>
+    <div class="muted">Политика конфиденциальности · Пользовательское соглашение</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script src="admin-check.js"></script>
+</body>
+</html>

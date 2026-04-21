@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Главная страница</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+  <div class="container header__row">
+    <a class="logo" href="index.html">
+      <span class="logo__mark">+</span><span class="logo__text">MedCare</span>
+    </a>
+
+    <nav>
+      <a href="index.html">Главная</a>
+      <a href="services.html">Услуги и цены</a>
+      <a href="doctors.html">Врачи</a>
+      <a href="contacts.html">Контакты</a>
+      <a href="about.html">О нас</a>
+      <a href="reviews.html">Отзывы</a>
+      <a href="admin.html" class="btn btn--admin" id="adminBtn">Админ</a>
+      </nav>
+
+    <a class="btn btn--primary" href="appointment.html">Записаться</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container hero__grid">
+      <div class="hero__content">
+        <h1 class="hero__title">Медицинский центр MedCare</h1>
+        <p class="hero__text">
+          Консультации, диагностика, анализы. Прозрачные цены и удобная запись онлайн.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="services.html">Посмотреть цены</a>
+          <a class="btn btn--ghost" href="doctors.html">Наши специалисты</a>
+        </div>
+
+        <div class="hero__stats">
+          <div class="stat"><div class="stat__num">7+</div><div class="stat__label">лет работы</div></div>
+          <div class="stat"><div class="stat__num">10</div><div class="stat__label">специалистов</div></div>
+          <div class="stat"><div class="stat__num">4.8</div><div class="stat__label">средний рейтинг</div></div>
+        </div>
+      </div>
+
+      <div class="hero__card">
+        <h3 class="card__title">График работы</h3>
+        <ul class="list">
+          <li><b>Пн–Пт:</b> 08:00–20:00</li>
+          <li><b>Сб:</b> 09:00–18:00</li>
+          <li><b>Вс:</b> 10:00–16:00</li>
+        </ul>
+        <div class="divider"></div>
+        <p class="muted">Техас MedCare, Хьюстон, Техас, США</p>
+        <p class="muted">Тел: +7 (777) 123-45-67</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section__head">
+        <div>
+          <h2 class="section__title">Быстрые ссылки</h2>
+          <p class="section__subtitle">Самое нужное в один клик.</p>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="card">
+          <div class="card__top"><span class="badge">Услуги</span><span class="meta">Цены</span></div>
+          <h3 class="card__name">Услуги и прайс-лист</h3>
+          <p class="card__desc">Фильтр по категориям и поиск по услугам.</p>
+          <div class="card__meta"><a class="btn btn--ghost" href="services.html">Открыть</a></div>
+        </div>
+
+        <div class="card">
+          <div class="card__top"><span class="badge">Врачи</span><span class="meta">Стаж</span></div>
+          <h3 class="card__name">Наши специалисты</h3>
+          <p class="card__desc">Карточки врачей и направления.</p>
+          <div class="card__meta"><a class="btn btn--ghost" href="doctors.html">Открыть</a></div>
+        </div>
+
+        <div class="card">
+          <div class="card__top"><span class="badge">Онлайн</span><span class="meta">Форма</span></div>
+          <h3 class="card__name">Запись на приём</h3>
+          <p class="card__desc">Валидация, события submit/input/change.</p>
+          <div class="card__meta"><a class="btn btn--ghost" href="appointment.html">Открыть</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer__row">
+    <div class="muted">© 2026 MedCare. Учебный проект.</div>
+    <div class="muted">Политика конфиденциальности · Пользовательское соглашение</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script src="admin-check.js"></script>
+</body>
+</html>
